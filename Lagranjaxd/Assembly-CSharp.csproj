@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\MovimientojJugador.cs" />
+    <Compile Include="Assets\Scripts\trigovida.cs" />
     <Compile Include="Assets\Scripts\GallinaMovimiento.cs" />
     <Compile Include="Assets\Scripts\Ponedora.cs" />
   </ItemGroup>
