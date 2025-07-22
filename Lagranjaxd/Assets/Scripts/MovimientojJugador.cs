@@ -6,6 +6,8 @@ public class MovimientojJugador : MonoBehaviour
     public float sprint = 5f;
     public Rigidbody2D rg;
     public Vector2 entrada;
+    public GameObject preFabTrigo;
+    public GameObject preFabTomate;
     Animator animator;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -49,7 +51,29 @@ public class MovimientojJugador : MonoBehaviour
            animator.SetBool("estaCaminando", false); 
     }
 
-}
+    }
+    public void sembrarT(InputAction.CallbackContext contexto)
+    {
+        if (contexto.started)
+        {
+            Instantiate(preFabTrigo, transform.position, Quaternion.identity);
+        }
+    }
+
+    public void sembrarJ(InputAction.CallbackContext contexto)
+    {
+        if (contexto.started)
+        {
+            Instantiate(preFabTomate, transform.position, Quaternion.identity);
+        }
+    }
+
+        private void OntriggerEnter2D(Collider2D colision){
+            if (colision.CompareTag("huevo")){
+                Destroy(colision.gameObject);
+                GameManager.instancia.SumarHuevo();
+            }
+            }
 
 
 
