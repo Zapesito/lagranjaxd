@@ -55,6 +55,10 @@
     <Compile Include="Assets\Scripts\Ponedora.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\UI\InventarioStyle.uss" />
+    <None Include="Assets\UI\Inventario UI.uxml" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.1.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
       <Private>False</Private>
