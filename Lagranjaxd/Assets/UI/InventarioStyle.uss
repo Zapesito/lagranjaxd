@@ -1,0 +1,8 @@
+VisualElement {}
+
+#LabelHuevos {
+    font-size: 24px; /* tamaño letra */
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+}
