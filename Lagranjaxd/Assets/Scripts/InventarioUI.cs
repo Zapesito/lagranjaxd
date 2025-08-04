@@ -11,16 +11,13 @@ public class InventarioUI : MonoBehaviour
     {
         var root = GetComponent<UIDocument>().rootVisualElement;
         labelHuevos = root.Q<Label>("labelHuevos");
-
-
-
- }
+    }
 
 
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.instancia.huevos == huevosPrevios)
+        if (GameManager.instancia.huevos != huevosPrevios)
         {
             huevosPrevios = GameManager.instancia.huevos;
             labelHuevos.text = huevosPrevios.ToString();

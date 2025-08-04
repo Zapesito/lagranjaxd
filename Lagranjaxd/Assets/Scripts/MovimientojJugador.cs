@@ -68,7 +68,7 @@ public class MovimientojJugador : MonoBehaviour
         }
     }
 
-        private void OntriggerEnter2D(Collider2D colision){
+        private void OnTriggerEnter2D(Collider2D colision){
             if (colision.CompareTag("huevo")){
                 Destroy(colision.gameObject);
                 GameManager.instancia.SumarHuevo();

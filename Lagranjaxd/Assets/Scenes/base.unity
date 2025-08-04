@@ -1481,8 +1481,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 141c586507a6d474eaf4fb6f12c15b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  huevo: {fileID: 1674755441}
-  intervalo: 6
+  huevo: {fileID: 8252623795052127046, guid: 7679b927cf5195c48a7060dad2972a5e, type: 3}
+  intervalo: 2
 --- !u!1 &891576211
 GameObject:
   m_ObjectHideFlags: 0
@@ -1524,6 +1524,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1236264200}
   - component: {fileID: 1236264199}
+  - component: {fileID: 1236264201}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -1565,6 +1566,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1236264201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236264197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c3140dcdae60fe4fafc385ebc80a921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1574802177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,11 +1656,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!1 &1674755441 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8252623795052127046, guid: 7679b927cf5195c48a7060dad2972a5e, type: 3}
-  m_PrefabInstance: {fileID: 2009306924189675326}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1684846548
 GameObject:
   m_ObjectHideFlags: 0
